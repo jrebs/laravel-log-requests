@@ -1,0 +1,33 @@
+{
+    "name": "jrebs/laravel-log-requests",
+    "description": "Log requests and responses with minimal effort.",
+    "type": "library",
+    "require": {
+        "php": "^7.2",
+        "illuminate/support": "^5.8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Justin Rebelo",
+            "email": "justin@gotsignal.org"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Jrebs\\LogRequests\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jrebs\\LogRequests\\Providers\\LogRequestsServiceProvider"
+            ]
+        }
+    }
+}
