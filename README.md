@@ -10,6 +10,10 @@ I created this package with the following in mind:
 * easily re-usable across apps with a sensible zero-config default
 * allow easily overriding the handler for app or env customizations
 
+## requirements
+* `php >= 7.2`
+* `laravel/framework >= 5.8`
+
 ## install
 
 ```sh
