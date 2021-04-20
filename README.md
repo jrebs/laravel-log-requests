@@ -106,10 +106,15 @@ class CustomHandler implements LogRequestHandler
 {
     public static function log($request, $response, $duration): void
     {
+        /**
+         * @param  \Illuminate\Http\Request  $request
+         * @param  \Illuminate\Http\Response  $response
+         * @param  float  $duration
+         */
         Log::debug(sprintf(
             "Request: %s\nResponse: %s\nDuration: %s",
-            $request,
-            $response,
+            serialize($request->input()),
+            serialize($response->getContent()),
             $duration
         ));
     }
